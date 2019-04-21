@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.animatedbackground">
+    package="com.example.Jesture">
 
     <application
         android:allowBackup="true"
@@ -9,19 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
-        <activity android:name=".Main4Activity"
+        <activity android:name="com.example.Jesture.Main4Activity"
             android:screenOrientation="landscape"
             android:configChanges="orientation|keyboardHidden"
             ></activity>
-        <activity android:name=".Main3Activity"
+        <activity android:name="com.example.Jesture.Main3Activity"
             android:screenOrientation="portrait"
             android:configChanges="orientation|keyboardHidden"
             />
-        <activity android:name=".Main2Activity"
+        <activity android:name="com.example.Jesture.Main2Activity"
             android:screenOrientation="portrait"
             android:configChanges="orientation|keyboardHidden"
             />
-        <activity android:name=".MainActivity"
+        <activity android:name="com.example.Jesture.MainActivity"
             android:screenOrientation="portrait"
             android:configChanges="orientation|keyboardHidden"
             >

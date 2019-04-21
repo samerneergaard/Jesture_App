@@ -1,4 +1,4 @@
-package com.example.animatedbackground;
+package com.example.Jesture;
 
 import android.content.Intent;
 import android.graphics.drawable.AnimationDrawable;

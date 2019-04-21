@@ -1,4 +1,4 @@
-package com.example.animatedbackground;
+package com.example.Jesture;
 
 import android.animation.ArgbEvaluator;
 import android.content.Intent;
