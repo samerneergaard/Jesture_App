@@ -69,7 +69,7 @@ public class Main4Activity extends AppCompatActivity implements SensorEventListe
         }
 
         else if(z < -6 && !next){
-            feed.setText("Wrong");
+            feed.setText("Pass");
             if(i < array1.length-1){
                 next = true;
                 i++;

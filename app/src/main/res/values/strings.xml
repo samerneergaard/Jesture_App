@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">AnimatedBackground</string>
+
+    //strings from main3.xml
+    <string name="enter_name">Enter Name</string>
+    <string name="play_game">Play Game</string>
+    <string name="add">Add</string>
+    <string name="Pass">Pass</string>
+    <string name="Correct">Correct</string>
 </resources>
