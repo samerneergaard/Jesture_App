@@ -10,24 +10,20 @@ import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
-public class Main4Activity extends AppCompatActivity implements SensorEventListener {
-
+//standard charade game
+public class Main5Activity extends AppCompatActivity implements SensorEventListener {
 
     TextView xaccel;
     TextView feed;
     TextView question;
-    String [] array1 = {"Donald Trump","Britney Spears","Bradley Cooper","Michelle Obama", "Prof Stringhini"};
-    //next item
+    String [] array1 = {"Skiing","Swimming","Eating Spaghetti","Baseball", "Ballet", "Typewriter", "Trampoline"};
     int i=0;
-    //number correct
-    public static int c = 0;
-    //number pass
-    public static int p = 0;
     boolean next = true;
 
     //Sensor manager
     private SensorManager sensorManager;
     private Sensor accelerometerSensor;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,7 +56,7 @@ public class Main4Activity extends AppCompatActivity implements SensorEventListe
 
             @Override
             public void run() {
-        question.setText(array1[i]);
+                question.setText(array1[i]);
             }
         }, 2000 );//time in milisecond
 
@@ -68,7 +64,6 @@ public class Main4Activity extends AppCompatActivity implements SensorEventListe
             feed.setText("Correct");
             if(i < array1.length-1){
                 next = true;
-                c++;
                 i++;
 
             }
@@ -78,7 +73,6 @@ public class Main4Activity extends AppCompatActivity implements SensorEventListe
             feed.setText("Pass");
             if(i < array1.length-1){
                 next = true;
-                p++;
                 i++;
 
             }
@@ -95,4 +89,3 @@ public class Main4Activity extends AppCompatActivity implements SensorEventListe
 
     }
 }
-//WHEN ADD NEXT ACTIVITY, NEED TO SEND P AND C TO SHOW SCORE, use keys: "correct" and "pass"

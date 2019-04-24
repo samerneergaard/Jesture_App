@@ -9,26 +9,34 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
-        <activity android:name="com.example.Jesture.Main4Activity"
-            android:screenOrientation="landscape"
+        <activity android:name=".Main7Activity"></activity>
+        <activity
+            android:name=".Main6Activity"
             android:configChanges="orientation|keyboardHidden"
-            ></activity>
-        <activity android:name="com.example.Jesture.Main3Activity"
-            android:screenOrientation="portrait"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Main5Activity"
             android:configChanges="orientation|keyboardHidden"
-            />
-        <activity android:name="com.example.Jesture.Main2Activity"
-            android:screenOrientation="portrait"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Main4Activity"
             android:configChanges="orientation|keyboardHidden"
-            />
-        <activity android:name="com.example.Jesture.MainActivity"
-            android:screenOrientation="portrait"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Main3Activity"
             android:configChanges="orientation|keyboardHidden"
-            >
-
-
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Main2Activity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

@@ -33,7 +33,7 @@ public class Main2Activity extends AppCompatActivity {
         playnow = (Button) findViewById(R.id.playnow);
         //can change button images for types of games
         models = new ArrayList<>();
-        models.add(new Model(R.drawable.defaultgame, "Standard Game", "Standard charades where friends guess the celebrity"));
+        models.add(new Model(R.drawable.defaultgame, "Standard Game", "Standard charades where friends act out the word"));
         models.add(new Model(R.drawable.accentgame, "Accents", "Try and guess the accent!"));
         models.add(new Model(R.drawable.customgame, "Custom Game", "Create your own questions"));
         models.add(new Model(R.drawable.newgame, "Names Game", "Use team members names and act them out in the given situation"));
@@ -69,7 +69,7 @@ public class Main2Activity extends AppCompatActivity {
                 playnow.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        if(pos ==0 || pos == 1) {
+                        if(pos ==0 || pos == 1){
                             startActivity(new Intent(Main2Activity.this, MainActivity.class));
                         }
                         else if(pos == 3){

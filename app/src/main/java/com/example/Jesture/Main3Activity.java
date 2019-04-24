@@ -12,14 +12,17 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
+
 public class Main3Activity extends AppCompatActivity {
+
 
     Button playgame;
     Button addplayer;
     EditText playername;
     ListView listnames;
     //create dynamic array to add names to
-    ArrayList<String> nameArray = new ArrayList<String>();
+   public static final ArrayList<String> nameArray = new ArrayList<String>();
+   public static int numPlayers = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,13 +36,16 @@ public class Main3Activity extends AppCompatActivity {
 
         //Button to add a player
         addplayer.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View view) {
 
                 // convert text input to string
                 String getInput = playername.getText().toString();
                 if (getInput != null) {
+                    numPlayers++;
                     nameArray.add(getInput);
+                    //adapt and add to list view
                     ArrayAdapter<String> adapter = new ArrayAdapter<String>(Main3Activity.this, android.R.layout.simple_expandable_list_item_1, nameArray);
                     listnames.setAdapter(adapter);
                     ((EditText) findViewById(R.id.playername)).setText("");
@@ -48,14 +54,19 @@ public class Main3Activity extends AppCompatActivity {
 
         });
 
-        //Button to begin the game
+        //Button to begin the game and send number of players
         playgame = (Button) findViewById(R.id.playgame);
         playgame.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Main3Activity.this, Main4Activity.class));
+                Intent intent = new Intent(Main3Activity.this, Main6Activity.class);
+                intent.putStringArrayListExtra("list", nameArray);
+                intent.putExtra("key", numPlayers);
+                startActivity(intent);
+
             }
         });
+
 
     }
 }
