@@ -16,7 +16,7 @@ public class Main6Activity extends AppCompatActivity {
     Button startbtn;
     //TEMP
     Button button2;
-    static int count = -1;
+    static int count;
     ArrayList<String> nameArray = null;
 
     @Override
@@ -24,15 +24,24 @@ public class Main6Activity extends AppCompatActivity {
         super.onResume();
         //receive names and number of players
         Bundle b = getIntent().getExtras();
+
+
         if(nameArray == null) {
             nameArray = getIntent().getExtras().getStringArrayList("list");
         }
 
         int numPlayers = getIntent().getIntExtra("key", 0);
-        //int whosnext = getIntent().getIntExtra("next", 0);
-        count ++;
-        //need to reset to first player if decide to play more rounds than number of people
-        if (count > numPlayers) {
+        String flag = getIntent().getStringExtra("flag");
+
+        //if flag is zero, then first time opening activity
+        if(flag == null){
+            count = -1;
+        }
+        //else coming from later activity and want to incremement current count
+        count++;
+
+        //need to reset to first player if decide to play more rounds than number of people playing
+        if (count == nameArray.size()) {
             count = 0;
         }
 
@@ -64,6 +73,7 @@ public class Main6Activity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Main6Activity.this, Main7Activity.class);
+                intent.putStringArrayListExtra("list", nameArray);
                 startActivity(intent);
             }
         });

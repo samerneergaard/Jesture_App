@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+
 public class Main7Activity extends AppCompatActivity {
 //Show score - next player - new game
 
@@ -14,15 +16,22 @@ public class Main7Activity extends AppCompatActivity {
     Button stopbtn;
     TextView correcttxt;
     TextView passtxt;
-   //can't do whos next variable - would have to carry it throughout the game, easier to increment at Main6Activity
-    // public static int whosnext;
+    //will know if coming from this page for the purpose of iterating through player names
+    public static String flag;
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        flag = "Again";
+
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main7);
-        //final ArrayList<String> nameArray = getIntent().getExtras().getStringArrayList("list");
-        //whosnext = 0;
+
+
 
         //receive correct and pass score
         int c = 5;
@@ -42,10 +51,10 @@ public class Main7Activity extends AppCompatActivity {
         againbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //whosnext++;
+                ArrayList<String> nameArray = getIntent().getExtras().getStringArrayList("list");
                 Intent intent = new Intent(Main7Activity.this, Main6Activity.class);
-                //intent.putStringArrayListExtra("list", nameArray);
-                //intent.putExtra("next", whosnext);
+                intent.putStringArrayListExtra("list", nameArray);
+                intent.putExtra("flag", flag);
                 startActivity(intent);
 
             }
@@ -55,9 +64,7 @@ public class Main7Activity extends AppCompatActivity {
         stopbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //whosnext++;
                 Intent intent = new Intent(Main7Activity.this, Main2Activity.class);
-                //intent.putExtra("next", whosnext);
                 startActivity(intent);
             }
         });
