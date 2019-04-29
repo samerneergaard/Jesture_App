@@ -63,6 +63,7 @@ public class Main6Activity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Main6Activity.this, Main4Activity.class);
+                intent.putStringArrayListExtra("list", nameArray);
                 startActivity(intent);
             }
         });

@@ -34,10 +34,10 @@ public class Main7Activity extends AppCompatActivity {
 
 
         //receive correct and pass score
-        int c = 5;
-        int p = 5;
-        //int c = getIntent().getIntExtra("correct", 0);
-        //int p = getIntent().getIntExtra("pass", 0);
+        //int c = 5;
+        //int p = 5;
+        int c = getIntent().getIntExtra("correct", 0);
+        int p = getIntent().getIntExtra("pass", 0);
 
         //display number correct
         correcttxt = (TextView) findViewById(R.id.correcttxt);

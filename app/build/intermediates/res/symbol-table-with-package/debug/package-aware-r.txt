@@ -721,6 +721,7 @@ id blocking
 id bottom
 id button2
 id buttonPanel
+id button_exit
 id center
 id center_horizontal
 id center_vertical
@@ -838,6 +839,7 @@ id text
 id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
+id text_view_countdown
 id textdescription
 id time
 id title

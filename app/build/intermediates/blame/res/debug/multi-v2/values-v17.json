@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\DrewB\\Desktop\\EC327 Final Project\\Jesture\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v17\\values-v17.xml",
+            "outputFile": "C:\\Users\\RML\\AndroidStudioProjects\\game\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v17\\values-v17.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\DrewB\\.gradle\\caches\\transforms-2\\files-2.1\\3549dbb7b853bf884ed26f77dce1e41b\\res\\values-v17\\values-v17.xml",
+                    "source": "C:\\Users\\RML\\.gradle\\caches\\transforms-2\\files-2.1\\9ba65bdafb7b0e6c1aaac9f434767fdd\\res\\values-v17\\values-v17.xml",
                     "from": {
                         "startLines": "2,5,9,12,15,18,22,25,29,33,37,40,43,46,50,53,57",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
