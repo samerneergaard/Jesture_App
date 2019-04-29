@@ -28,14 +28,18 @@ public class Main4Activity extends AppCompatActivity implements SensorEventListe
     private boolean mTimerRunning;
     private long mTimeLeft = Game_Time;
 
+
+
     TextView xaccel;
     TextView feed;
     TextView question;
-    String [] array1 = {"Donald Trump","Britney Spears","Bradley Cooper","Michelle Obama", "Prof Stringhini"};
+    String [] array1 = {"Donald Trump", "Marilyn Monroe", "Ellen Degeneres", "Beyonce", "Morgan Freeman", "Jimmy Fallon", "Michael Jackson", "Justin Bieber", "Mac Miller", "Kim Kardashian", "Miley Cyrus", "Emma Watson", "Jennifer Anniston", "Elvis Presley", "Barrack Obama", "Steve Jobs", "Elon Musk", "George Clooney", "Mark Zuckerberg", "Princess Diana", "Kanye West", "Britney Spears","Bradley Cooper","Michelle Obama", "Prof Stringhini"};
 
     //next item
     Random rand = new Random();
     int i= rand.nextInt(array1.length);
+    //array of already used indexes
+    ArrayList<Integer> previous = new ArrayList<>();
 
     //number correct
     public static int c = 0;
@@ -118,8 +122,10 @@ public class Main4Activity extends AppCompatActivity implements SensorEventListe
         if(event.sensor.getType() != Sensor.TYPE_ACCELEROMETER){
             return;
         }
-        ArrayList<Integer> previous = new ArrayList<>();
-        previous.add(i);
+        //first term presented
+        if(previous.size() == 0) {
+            previous.add(i);
+        }
 
         float x = event.values[0];
         float y = event.values[1];
@@ -134,32 +140,37 @@ public class Main4Activity extends AppCompatActivity implements SensorEventListe
             public void run() {
                 question.setText(array1[i]);
             }
-        }, 2000 );//time in milisecond
+        }, 2000 );//time in millisecond
 
         if(z > 6 && !next){
             feed.setText("Correct");
-            c++;
-            if(i < array1.length-1){
+            if(i <= array1.length){
                 next = true;
+                c++;
                 while (previous.contains(i)) {
                     i = rand.nextInt(array1.length);
                 }
                 previous.add(i);
             }
         }
-
+        //!next in
         else if(z < -6 && !next){
             feed.setText("Pass");
-            p++;
-            if(i < array1.length-1){
+            //if random index is less than available indexes (always should be), enter
+            //next = true means won't enter this elseif again until orientation resets
+            if(i <= array1.length){
                 next = true;
+                p++;
+                //won't contain i the first time, index has already been called, then create new random index
                 while (previous.contains(i)) {
                     i = rand.nextInt(array1.length);
                 }
+                //add index to array so doesn't repeat
                 previous.add(i);
             }
         }
         else if(z > -6 && z < 6){
+            //orientation reset
             next = false;
             feed.setText("???");
 
@@ -171,4 +182,4 @@ public class Main4Activity extends AppCompatActivity implements SensorEventListe
 
     }
 }
-//WHEN ADD NEXT ACTIVITY, NEED TO SEND P AND C TO SHOW SCORE, use keys: "correct" and "pass"
+
