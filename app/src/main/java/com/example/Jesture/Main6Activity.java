@@ -18,12 +18,16 @@ public class Main6Activity extends AppCompatActivity {
     Button button2;
     static int count;
     ArrayList<String> nameArray = null;
+    //public static String gameflag;
+
 
     @Override
     protected void onResume() {
         super.onResume();
         //receive names and number of players
         Bundle b = getIntent().getExtras();
+        //gameflag = getIntent().getStringExtra("gameflag");
+
 
 
         if(nameArray == null) {
@@ -32,6 +36,7 @@ public class Main6Activity extends AppCompatActivity {
 
         int numPlayers = getIntent().getIntExtra("key", 0);
         String flag = getIntent().getStringExtra("flag");
+
 
         //if flag is zero, then first time opening activity
         if(flag == null){
@@ -57,14 +62,20 @@ public class Main6Activity extends AppCompatActivity {
         setContentView(R.layout.activity_main6);
 
 
+
         //start game
         startbtn = (Button) findViewById(R.id.startbtn);
         startbtn.setOnClickListener(new View.OnClickListener() {
+            String gameflag = getIntent().getStringExtra("gameflag");
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Main6Activity.this, Main4Activity.class);
-                intent.putStringArrayListExtra("list", nameArray);
-                startActivity(intent);
+                if(gameflag.equals("celeb")) {
+                    Intent intent = new Intent(Main6Activity.this, Main4Activity.class);
+                    intent.putStringArrayListExtra("list", nameArray);
+                    intent.putExtra("gameflag", gameflag);
+                    startActivity(intent);
+                }
+                //elseif flag = blah blah choose diff game activity
             }
         });
 

@@ -23,6 +23,7 @@ public class Main3Activity extends AppCompatActivity {
     //create dynamic array to add names to
    public static final ArrayList<String> nameArray = new ArrayList<String>();
 
+
     @Override
     protected void onRestart() {
         super.onRestart();
@@ -66,7 +67,7 @@ public class Main3Activity extends AppCompatActivity {
         playgame.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Main3Activity.this, Main6Activity.class);
+                Intent intent = new Intent(Main3Activity.this, Main2Activity.class);
                 intent.putStringArrayListExtra("list", nameArray);
                 startActivity(intent);
 

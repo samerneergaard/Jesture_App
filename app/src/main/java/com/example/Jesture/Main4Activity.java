@@ -27,7 +27,7 @@ public class Main4Activity extends AppCompatActivity implements SensorEventListe
     private CountDownTimer mCountDownTimer;
     private boolean mTimerRunning;
     private long mTimeLeft = Game_Time;
-
+    //public static String gameflag;
 
 
     TextView xaccel;
@@ -63,11 +63,13 @@ public class Main4Activity extends AppCompatActivity implements SensorEventListe
             @Override
             public void onClick(View v) {
                 //escape to new activity
+                String gameflag = getIntent().getStringExtra("gameflag");
                 ArrayList<String> nameArray = getIntent().getExtras().getStringArrayList("list");
                 Intent intent = new Intent(Main4Activity.this, Main7Activity.class);
                 //send num correct and num pass
                 intent.putExtra("correct", c);
                 intent.putExtra("pass", p);
+                intent.putExtra("gameflag", gameflag);
                 intent.putStringArrayListExtra("list", nameArray);
                 startActivity(intent);
             }
@@ -98,12 +100,14 @@ public class Main4Activity extends AppCompatActivity implements SensorEventListe
             @Override
             public void onFinish() {
                 mTimerRunning = false;
-                //escape to new activity
+                String gameflag = getIntent().getStringExtra("gameflag");
                 ArrayList<String> nameArray = getIntent().getExtras().getStringArrayList("list");
+                //escape to new activity
                 Intent intent = new Intent(Main4Activity.this, Main7Activity.class);
-                //send num correct and num pass
+                //send num correct/pass and which game you are on
                 intent.putExtra("correct", c);
                 intent.putExtra("pass", p);
+                intent.putExtra("gameflag", gameflag);
                 intent.putStringArrayListExtra("list", nameArray);
                 startActivity(intent);
             }

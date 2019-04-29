@@ -18,11 +18,14 @@ public class Main7Activity extends AppCompatActivity {
     TextView passtxt;
     //will know if coming from this page for the purpose of iterating through player names
     public static String flag;
+    //keep track of which game you are on
+    public static String gameflag;
 
     @Override
     protected void onResume() {
         super.onResume();
         flag = "Again";
+
 
     }
 
@@ -51,10 +54,12 @@ public class Main7Activity extends AppCompatActivity {
         againbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ArrayList<String> nameArray = getIntent().getExtras().getStringArrayList("list");
+               ArrayList<String> nameArray = getIntent().getExtras().getStringArrayList("list");
+               String gameflag = getIntent().getStringExtra("gameflag");
                 Intent intent = new Intent(Main7Activity.this, Main6Activity.class);
                 intent.putStringArrayListExtra("list", nameArray);
                 intent.putExtra("flag", flag);
+                intent.putExtra("gameflag", gameflag);
                 startActivity(intent);
 
             }
@@ -64,7 +69,9 @@ public class Main7Activity extends AppCompatActivity {
         stopbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                ArrayList<String> nameArray = getIntent().getExtras().getStringArrayList("list");
                 Intent intent = new Intent(Main7Activity.this, Main2Activity.class);
+                intent.putStringArrayListExtra("list", nameArray);
                 startActivity(intent);
             }
         });
