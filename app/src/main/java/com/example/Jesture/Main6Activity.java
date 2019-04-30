@@ -30,7 +30,6 @@ public class Main6Activity extends AppCompatActivity {
             nameArray = getIntent().getExtras().getStringArrayList("list");
         }
 
-        int numPlayers = getIntent().getIntExtra("key", 0);
         String flag = getIntent().getStringExtra("flag");
 
 

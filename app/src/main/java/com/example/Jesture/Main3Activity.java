@@ -46,8 +46,6 @@ public class Main3Activity extends AppCompatActivity {
         addplayer = (Button) findViewById(R.id.addplayer);
         playername = (EditText) findViewById(R.id.playername);
         listnames = (ListView) findViewById(R.id.listnames);
-        //((TextView) findViewById(R.id.ifnull)).setText("Input player names to advance to next screen!");
-
 
 
 
