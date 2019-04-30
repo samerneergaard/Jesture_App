@@ -12,7 +12,7 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
-
+//players all add their names - stored in an array to keep track of who is up next
 public class Main3Activity extends AppCompatActivity {
 
 

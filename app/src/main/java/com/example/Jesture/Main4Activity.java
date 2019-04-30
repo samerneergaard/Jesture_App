@@ -18,7 +18,7 @@ import java.util.Locale;
 import java.util.Random;
 import java.util.ArrayList;
 
-
+//game mode with timer
 public class Main4Activity extends AppCompatActivity implements SensorEventListener {
 
     private static final long Game_Time = 30000; //(milliseconds)

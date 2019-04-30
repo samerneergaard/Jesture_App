@@ -13,6 +13,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+//main screen
 public class MainActivity extends AppCompatActivity {
 
     Button sub;

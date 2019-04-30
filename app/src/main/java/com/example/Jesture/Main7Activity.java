@@ -9,8 +9,9 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class Main7Activity extends AppCompatActivity {
 //Show score - next player - new game
+public class Main7Activity extends AppCompatActivity {
+
 
     Button againbtn;
     Button stopbtn;

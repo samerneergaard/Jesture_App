@@ -11,10 +11,8 @@ import android.widget.Button;
 import java.util.ArrayList;
 import java.util.List;
 
+//user chooses their game mode
 public class Main2Activity extends AppCompatActivity {
-
-    //ArrayList<String> arrayList;
-    //ArrayAdapter<String> arrayAdapter;
 
     Button playnow;
     ViewPager viewPager;
@@ -110,9 +108,5 @@ public class Main2Activity extends AppCompatActivity {
 
             }
         });
-        //ConstraintLayout constraintLayout = findViewById(R.id.layout);
-        //AnimationDrawable animationDrawable = (AnimationDrawable) constraintLayout.getBackground();
-        //animationDrawable.setEnterFadeDuration(2000);
-        //animationDrawable.setExitFadeDuration(4000);
-        //animationDrawable.start();
-}}
+    }
+}

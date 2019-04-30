@@ -14,11 +14,8 @@ public class Main6Activity extends AppCompatActivity {
 
     TextView nextplayer;
     Button startbtn;
-    //TEMP
-    //Button button2;
     static int count;
     ArrayList<String> nameArray = null;
-    //public static String gameflag;
 
 
     @Override
@@ -61,7 +58,6 @@ public class Main6Activity extends AppCompatActivity {
         setContentView(R.layout.activity_main6);
 
 
-
         //start game
         startbtn = (Button) findViewById(R.id.startbtn);
         startbtn.setOnClickListener(new View.OnClickListener() {
@@ -76,17 +72,6 @@ public class Main6Activity extends AppCompatActivity {
                 }
         });
 
-        /* //temp button to test score
-        button2 = (Button) findViewById(R.id.button2);
-        button2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(Main6Activity.this, Main7Activity.class);
-                intent.putStringArrayListExtra("list", nameArray);
-                startActivity(intent);
-            }
-        });
-        */
 
     }
 
