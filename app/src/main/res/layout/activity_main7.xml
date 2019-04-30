@@ -71,12 +71,13 @@
 
     <Button
         android:id="@+id/stopbtn"
-        android:layout_width="153dp"
-        android:layout_height="87dp"
+        android:layout_width="152dp"
+        android:layout_height="72dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
+        android:background="@drawable/rounded_button"
         android:text="@string/new_game"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -87,12 +88,13 @@
 
     <Button
         android:id="@+id/againbtn"
-        android:layout_width="164dp"
-        android:layout_height="89dp"
+        android:layout_width="171dp"
+        android:layout_height="75dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
+        android:background="@drawable/rounded_button"
         android:text="@string/next_player"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

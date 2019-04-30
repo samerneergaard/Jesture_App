@@ -952,6 +952,7 @@ string abc_toolbar_collapse_description
 string add
 string app_name
 string enter_name
+string input_player_names_to_advance_to_next_screen
 string new_game
 string next_player
 string passes

@@ -3,14 +3,15 @@
 
     //strings from main3.xml
     <string name="enter_name">Enter Name</string>
-    <string name="play_game">Play Game</string>
+    <string name="play_game">Play Game!</string>
     <string name="add">Add</string>
     <string name="Pass">Pass</string>
     <string name="Correct">Correct</string>
-    <string name="you_re_up">You\'re Up!!!</string>
+    <string name="you_re_up">You\'re up,</string>
     <string name="start_game">Start Game!</string>
     <string name="new_game">New Game</string>
     <string name="next_player">Next Player</string>
     <string name="passes">Passes</string>
+    <string name="input_player_names_to_advance_to_next_screen">Input player names to advance to next screen!</string>
 
 </resources>

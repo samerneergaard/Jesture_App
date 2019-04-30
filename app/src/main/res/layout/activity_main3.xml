@@ -78,18 +78,19 @@
 
     <TextView
         android:id="@+id/ifnull"
-        android:layout_width="276dp"
-        android:layout_height="56dp"
+        android:layout_width="336dp"
+        android:layout_height="31dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:text="Input player names to advance to next screen!"
+        android:text="@string/input_player_names_to_advance_to_next_screen"
         android:textColor="@color/cardview_light_background"
-        android:textSize="12sp"
+        android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.864"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.961" />
+        app:layout_constraintVertical_bias="0.976" />
 
 </android.support.constraint.ConstraintLayout>
