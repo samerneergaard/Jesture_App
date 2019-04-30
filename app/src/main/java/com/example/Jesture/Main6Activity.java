@@ -15,7 +15,7 @@ public class Main6Activity extends AppCompatActivity {
     TextView nextplayer;
     Button startbtn;
     //TEMP
-    Button button2;
+    //Button button2;
     static int count;
     ArrayList<String> nameArray = null;
     //public static String gameflag;
@@ -26,7 +26,6 @@ public class Main6Activity extends AppCompatActivity {
         super.onResume();
         //receive names and number of players
         Bundle b = getIntent().getExtras();
-        //gameflag = getIntent().getStringExtra("gameflag");
 
 
 
@@ -69,17 +68,15 @@ public class Main6Activity extends AppCompatActivity {
             String gameflag = getIntent().getStringExtra("gameflag");
             @Override
             public void onClick(View v) {
-                if(gameflag.equals("celeb")) {
-                    Intent intent = new Intent(Main6Activity.this, Main4Activity.class);
-                    intent.putStringArrayListExtra("list", nameArray);
-                    intent.putExtra("gameflag", gameflag);
-                    startActivity(intent);
+               Intent intent = new Intent(Main6Activity.this, Main4Activity.class);
+               intent.putStringArrayListExtra("list", nameArray);
+               intent.putExtra("gameflag", gameflag);
+               startActivity(intent);
+
                 }
-                //elseif flag = blah blah choose diff game activity
-            }
         });
 
-        //temp button to test new game screen
+        /* //temp button to test score
         button2 = (Button) findViewById(R.id.button2);
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -89,7 +86,7 @@ public class Main6Activity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
+        */
 
     }
 

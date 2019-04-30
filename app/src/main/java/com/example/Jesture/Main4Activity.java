@@ -27,17 +27,18 @@ public class Main4Activity extends AppCompatActivity implements SensorEventListe
     private CountDownTimer mCountDownTimer;
     private boolean mTimerRunning;
     private long mTimeLeft = Game_Time;
-    //public static String gameflag;
+    public static String gameflag;
+    private static String [] array1;
 
 
     TextView xaccel;
     TextView feed;
     TextView question;
-    String [] array1 = {"Donald Trump", "Marilyn Monroe", "Ellen Degeneres", "Beyonce", "Morgan Freeman", "Jimmy Fallon", "Michael Jackson", "Justin Bieber", "Mac Miller", "Kim Kardashian", "Miley Cyrus", "Emma Watson", "Jennifer Anniston", "Elvis Presley", "Barrack Obama", "Steve Jobs", "Elon Musk", "George Clooney", "Mark Zuckerberg", "Princess Diana", "Kanye West", "Britney Spears","Bradley Cooper","Michelle Obama", "Prof Stringhini"};
+
 
     //next item
     Random rand = new Random();
-    int i= rand.nextInt(array1.length);
+    int i;
     //array of already used indexes
     ArrayList<Integer> previous = new ArrayList<>();
 
@@ -59,6 +60,35 @@ public class Main4Activity extends AppCompatActivity implements SensorEventListe
         mTextViewCountDown = findViewById(R.id.text_view_countdown);
         mButtonEscape = findViewById(R.id.button_exit);
 
+
+        xaccel = (TextView) findViewById(R.id.xaccel);
+        feed = (TextView) findViewById(R.id.feed);
+        question = (TextView) findViewById(R.id.question);
+
+        sensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
+        accelerometerSensor = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
+        sensorManager.registerListener(this,accelerometerSensor, SensorManager.SENSOR_DELAY_NORMAL);
+
+        StartTimer();
+
+        String gameflag = getIntent().getStringExtra("gameflag");
+        //if(gameflag != null) {
+            if (gameflag.equals("celeb")) {
+                array1 = new String[]{"Donald Trump", "Marilyn Monroe", "Ellen Degeneres", "Beyonce", "Morgan Freeman", "Jimmy Fallon", "Michael Jackson", "Justin Bieber", "Mac Miller", "Kim Kardashian", "Miley Cyrus", "Emma Watson", "Jennifer Anniston", "Elvis Presley", "Barrack Obama", "Steve Jobs", "Elon Musk", "George Clooney", "Mark Zuckerberg", "Princess Diana", "Kanye West", "Britney Spears", "Bradley Cooper", "Michelle Obama", "Prof Stringhini"};
+            } else if (gameflag.equals("actions")) {
+                array1 = new String[]{"Playing Hopscotch", "Calling a Taxi", "Building a Snowman", "Building a Campfire", "Skiing", "Swimming", "Eating Spaghetti", "Baseball", "Ballet", "Flipping Pancakes", "Jumping on a Trampoline", "Ice Skating", "Yo-yo", "Fishing"};
+            } else if (gameflag.equals("accents")) {
+                array1 = new String[]{"Italian", "British", "Spanish", "Australian", "Japanese", "French", "Old English", "German", "Russian", "Irish", "Indian", "Boston", "Chicago", "New York", "Baltimore", "Canadian", "Southern"};
+            }
+
+       // else{
+         //   array1 = new String[] {"It's", "Not", "Working"};
+        //}
+
+       i = rand.nextInt(array1.length);
+
+
+        //leave game before timer is up
         mButtonEscape.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -74,16 +104,6 @@ public class Main4Activity extends AppCompatActivity implements SensorEventListe
                 startActivity(intent);
             }
         });
-
-        StartTimer();
-
-        xaccel = (TextView) findViewById(R.id.xaccel);
-        feed = (TextView) findViewById(R.id.feed);
-        question = (TextView) findViewById(R.id.question);
-
-        sensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
-        accelerometerSensor = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
-        sensorManager.registerListener(this,accelerometerSensor, SensorManager.SENSOR_DELAY_NORMAL);
 
     }
 
@@ -147,10 +167,10 @@ public class Main4Activity extends AppCompatActivity implements SensorEventListe
         }, 2000 );//time in millisecond
 
         if(z > 6 && !next){
-            feed.setText("Correct");
+            feed.setText("Pass");
             if(i <= array1.length){
                 next = true;
-                c++;
+                p++;
                 while (previous.contains(i)) {
                     i = rand.nextInt(array1.length);
                 }
@@ -159,12 +179,12 @@ public class Main4Activity extends AppCompatActivity implements SensorEventListe
         }
         //!next in
         else if(z < -6 && !next){
-            feed.setText("Pass");
+            feed.setText("Correct");
             //if random index is less than available indexes (always should be), enter
             //next = true means won't enter this elseif again until orientation resets
             if(i <= array1.length){
                 next = true;
-                p++;
+                c++;
                 //won't contain i the first time, index has already been called, then create new random index
                 while (previous.contains(i)) {
                     i = rand.nextInt(array1.length);

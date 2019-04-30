@@ -25,10 +25,6 @@
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.example.Jesture.Main5Activity"
-            android:configChanges="orientation|keyboardHidden"
-            android:screenOrientation="portrait" />
-        <activity
             android:name="com.example.Jesture.Main4Activity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="landscape" />
