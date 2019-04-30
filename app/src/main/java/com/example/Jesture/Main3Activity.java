@@ -9,6 +9,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -20,8 +21,12 @@ public class Main3Activity extends AppCompatActivity {
     Button addplayer;
     EditText playername;
     ListView listnames;
+    TextView ifnull;
+    int numPlayers = 0;
+
+
     //create dynamic array to add names to
-   public static final ArrayList<String> nameArray = new ArrayList<String>();
+   public static ArrayList<String> nameArray = new ArrayList<String>();
 
 
     @Override
@@ -41,6 +46,9 @@ public class Main3Activity extends AppCompatActivity {
         addplayer = (Button) findViewById(R.id.addplayer);
         playername = (EditText) findViewById(R.id.playername);
         listnames = (ListView) findViewById(R.id.listnames);
+        //((TextView) findViewById(R.id.ifnull)).setText("Input player names to advance to next screen!");
+
+
 
 
         //Button to add a player
@@ -53,6 +61,7 @@ public class Main3Activity extends AppCompatActivity {
                 String getInput = playername.getText().toString();
                 if (getInput != null) {
                     nameArray.add(getInput);
+                    numPlayers++;
                     //adapt and add to list view
                     ArrayAdapter<String> adapter = new ArrayAdapter<String>(Main3Activity.this, android.R.layout.simple_expandable_list_item_1, nameArray);
                     listnames.setAdapter(adapter);
@@ -67,9 +76,11 @@ public class Main3Activity extends AppCompatActivity {
         playgame.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Main3Activity.this, Main2Activity.class);
-                intent.putStringArrayListExtra("list", nameArray);
-                startActivity(intent);
+                if(numPlayers != 0){
+                    Intent intent = new Intent(Main3Activity.this, Main2Activity.class);
+                    intent.putStringArrayListExtra("list", nameArray);
+                    startActivity(intent);
+                }
 
             }
         });

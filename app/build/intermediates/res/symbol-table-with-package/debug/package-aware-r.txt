@@ -719,7 +719,6 @@ id barrier
 id beginning
 id blocking
 id bottom
-id button2
 id buttonPanel
 id button_exit
 id center
@@ -761,6 +760,7 @@ id homeAsUp
 id icon
 id icon_group
 id ifRoom
+id ifnull
 id image
 id info
 id invisible
@@ -892,10 +892,8 @@ layout activity_main
 layout activity_main2
 layout activity_main3
 layout activity_main4
-layout activity_main5
 layout activity_main6
 layout activity_main7
-layout activity_main8
 layout item
 layout notification_action
 layout notification_action_tombstone
