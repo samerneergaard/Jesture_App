@@ -72,18 +72,17 @@ public class Main4Activity extends AppCompatActivity implements SensorEventListe
         StartTimer();
 
         String gameflag = getIntent().getStringExtra("gameflag");
-        //if(gameflag != null) {
+
             if (gameflag.equals("celeb")) {
                 array1 = new String[]{"Donald Trump", "Marilyn Monroe", "Ellen Degeneres", "Beyonce", "Morgan Freeman", "Jimmy Fallon", "Michael Jackson", "Justin Bieber", "Mac Miller", "Kim Kardashian", "Miley Cyrus", "Emma Watson", "Jennifer Anniston", "Elvis Presley", "Barrack Obama", "Steve Jobs", "Elon Musk", "George Clooney", "Mark Zuckerberg", "Princess Diana", "Kanye West", "Britney Spears", "Bradley Cooper", "Michelle Obama", "Prof Stringhini"};
-            } else if (gameflag.equals("actions")) {
+            }
+            else if (gameflag.equals("actions")) {
                 array1 = new String[]{"Playing Hopscotch", "Calling a Taxi", "Building a Snowman", "Building a Campfire", "Skiing", "Swimming", "Eating Spaghetti", "Baseball", "Ballet", "Flipping Pancakes", "Jumping on a Trampoline", "Ice Skating", "Yo-yo", "Fishing"};
-            } else if (gameflag.equals("accents")) {
+            }
+            else if (gameflag.equals("accents")) {
                 array1 = new String[]{"Italian", "British", "Spanish", "Australian", "Japanese", "French", "Old English", "German", "Russian", "Irish", "Indian", "Boston", "Chicago", "New York", "Baltimore", "Canadian", "Southern"};
             }
 
-       // else{
-         //   array1 = new String[] {"It's", "Not", "Working"};
-        //}
 
        i = rand.nextInt(array1.length);
 
