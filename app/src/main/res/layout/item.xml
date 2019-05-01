@@ -32,22 +32,25 @@
                 android:layout_alignParentTop="true"
                 android:layout_marginLeft="16dp"
                 android:layout_marginTop="200dp"
+                android:fontFamily="@font/righteous"
                 android:text="Brochure"
                 android:textColor="#262626"
-                android:textSize="16dp" />
+                android:textSize="24sp" />
 
             <TextView
                 android:id="@+id/desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_below="@id/title"
-                android:layout_marginTop="3dp"
                 android:layout_marginLeft="16dp"
+                android:layout_marginTop="3dp"
                 android:layout_marginRight="16dp"
-                android:maxLines="3"
                 android:drawablePadding="10dp"
                 android:ellipsize="end"
+                android:fontFamily="@font/righteous"
+                android:maxLines="3"
                 android:text="Description"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:textSize="18sp" />
 
         </RelativeLayout>
 

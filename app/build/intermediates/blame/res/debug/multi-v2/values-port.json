@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\RML\\AndroidStudioProjects\\game\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-port\\values-port.xml",
+            "outputFile": "/Users/angelavellante1/Downloads/EC327/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-port/values-port.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\RML\\.gradle\\caches\\transforms-2\\files-2.1\\9ba65bdafb7b0e6c1aaac9f434767fdd\\res\\values-port\\values-port.xml",
+                    "source": "/Users/angelavellante1/.gradle/caches/transforms-2/files-2.1/3ebc64b1ec8184966ebaacffbd27f60d/res/values-port/values-port.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

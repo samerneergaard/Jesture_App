@@ -20,27 +20,24 @@
         android:textSize="45sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.647"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.347" />
 
     <TextView
         android:id="@+id/up"
-        android:layout_width="188dp"
-        android:layout_height="43dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
+        android:layout_width="268dp"
+        android:layout_height="114dp"
+        android:layout_marginEnd="72dp"
         android:layout_marginBottom="8dp"
+        android:fontFamily="@font/righteous"
         android:text="@string/you_re_up"
         android:textColor="@color/cardview_light_background"
-        android:textSize="30sp"
+        android:textSize="50sp"
         app:layout_constraintBottom_toTopOf="@+id/name1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.55"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.939" />
+        app:layout_constraintVertical_bias="0.991" />
 
     <Button
         android:id="@+id/startbtn"
@@ -52,6 +49,7 @@
         android:layout_marginBottom="8dp"
         android:background="@drawable/rounded_button"
         android:text="@string/start_game"
+        android:fontFamily= "@font/righteous"
         android:textSize="45sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

@@ -5,7 +5,7 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="23"
+        android:minSdkVersion="26"
         android:targetSdkVersion="28" />
 
     <application
@@ -21,10 +21,6 @@
         <activity android:name="com.example.Jesture.Main7Activity" />
         <activity
             android:name="com.example.Jesture.Main6Activity"
-            android:configChanges="orientation|keyboardHidden"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name="com.example.Jesture.Main5Activity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait" />
         <activity

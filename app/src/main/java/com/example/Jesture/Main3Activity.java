@@ -49,6 +49,7 @@ public class Main3Activity extends AppCompatActivity {
 
 
 
+
         //Button to add a player
         addplayer.setOnClickListener(new View.OnClickListener() {
 

@@ -682,6 +682,8 @@ drawable round
 drawable rounded_button
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+font font_family
+font righteous
 id ALT
 id CTRL
 id ConstraintLayout

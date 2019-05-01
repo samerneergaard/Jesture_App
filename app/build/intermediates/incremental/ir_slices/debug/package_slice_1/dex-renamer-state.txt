@@ -1,4 +1,4 @@
-#Wed Apr 24 19:17:29 EDT 2019
-base.0=C\:\\Users\\DrewB\\Desktop\\EC327 Final Project\\Jesture\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\1
+#Tue Apr 30 21:11:38 EDT 2019
+base.0=/Users/angelavellante1/Downloads/EC327/app/build/intermediates/transforms/dexMerger/debug/1
 path.0=classes.dex
 renamed.0=classes.dex
