@@ -53,6 +53,14 @@ public class Main4Activity extends AppCompatActivity implements SensorEventListe
     private Sensor accelerometerSensor;
 
     @Override
+    protected void onNewIntent(Intent intent) {
+        super.onNewIntent(intent);
+        StartTimer();
+        //p = 0;
+        //c = 0;
+    }
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main4);
@@ -68,6 +76,7 @@ public class Main4Activity extends AppCompatActivity implements SensorEventListe
         sensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
         accelerometerSensor = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
         sensorManager.registerListener(this,accelerometerSensor, SensorManager.SENSOR_DELAY_NORMAL);
+
 
         StartTimer();
 

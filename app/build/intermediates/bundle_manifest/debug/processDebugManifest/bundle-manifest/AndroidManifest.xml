@@ -18,7 +18,9 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme.NoActionBar" >
-        <activity android:name="com.example.Jesture.Main7Activity" />
+        <activity
+            android:name="com.example.Jesture.Main7Activity"
+            android:launchMode="singleTask" />
         <activity
             android:name="com.example.Jesture.Main6Activity"
             android:configChanges="orientation|keyboardHidden"
@@ -26,6 +28,7 @@
         <activity
             android:name="com.example.Jesture.Main4Activity"
             android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTop"
             android:screenOrientation="landscape" />
         <activity
             android:name="com.example.Jesture.Main3Activity"

@@ -1,10 +1,20 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/angelavellante1/Downloads/EC327/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml",
+            "outputFile": "C:\\Users\\RML\\AndroidStudioProjects\\count2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
             "map": [
                 {
-                    "source": "/Users/angelavellante1/.gradle/caches/transforms-2/files-2.1/3ebc64b1ec8184966ebaacffbd27f60d/res/values-v16/values-v16.xml",
+                    "source": "C:\\Users\\RML\\.gradle\\caches\\transforms-2\\files-2.1\\de5c39e69f60a8edf4b2ff21761b0fd7\\res\\values-v16\\values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\RML\\.gradle\\caches\\transforms-2\\files-2.1\\9ba65bdafb7b0e6c1aaac9f434767fdd\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -20,16 +30,6 @@
                         "endLines": "6",
                         "endColumns": "12",
                         "endOffsets": "289"
-                    }
-                },
-                {
-                    "source": "/Users/angelavellante1/.gradle/caches/transforms-2/files-2.1/01648f4ea1b6194b8d856f29c3e6d0a8/res/values-v16/values-v16.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "65",
-                        "endOffsets": "116"
                     }
                 }
             ]

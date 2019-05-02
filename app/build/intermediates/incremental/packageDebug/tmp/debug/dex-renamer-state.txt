@@ -1,7 +1,7 @@
-#Tue Apr 30 22:44:52 EDT 2019
-base.0=/Users/angelavellante1/Downloads/EC327/app/build/intermediates/dex/debug/mergeExtDexDebug/out
+#Wed May 01 21:45:03 EDT 2019
+base.0=C\:\\Users\\RML\\AndroidStudioProjects\\count2\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out
 path.1=classes.dex
 renamed.1=classes2.dex
 path.0=classes.dex
 renamed.0=classes.dex
-base.1=/Users/angelavellante1/Downloads/EC327/app/build/intermediates/dex/debug/mergeProjectDexDebug/out
+base.1=C\:\\Users\\RML\\AndroidStudioProjects\\count2\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\out
