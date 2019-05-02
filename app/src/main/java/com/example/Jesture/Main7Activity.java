@@ -62,6 +62,7 @@ public class Main7Activity extends AppCompatActivity {
                 intent.putExtra("flag", flag);
                 intent.putExtra("gameflag", gameflag);
                 startActivity(intent);
+                finish();
 
             }
         });
@@ -74,6 +75,7 @@ public class Main7Activity extends AppCompatActivity {
                 Intent intent = new Intent(Main7Activity.this, Main2Activity.class);
                 intent.putStringArrayListExtra("list", nameArray);
                 startActivity(intent);
+                finish();
             }
         });
 

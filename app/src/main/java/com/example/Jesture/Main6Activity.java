@@ -67,6 +67,7 @@ public class Main6Activity extends AppCompatActivity {
                intent.putStringArrayListExtra("list", nameArray);
                intent.putExtra("gameflag", gameflag);
                startActivity(intent);
+               finish();
 
                 }
         });

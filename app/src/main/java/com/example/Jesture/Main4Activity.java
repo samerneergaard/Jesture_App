@@ -25,7 +25,7 @@ public class Main4Activity extends AppCompatActivity implements SensorEventListe
     private TextView mTextViewCountDown;
     private Button mButtonEscape;
     private CountDownTimer mCountDownTimer;
-    private boolean mTimerRunning;
+    private boolean mTimerRunning = true;
     private long mTimeLeft = Game_Time;
     public static String gameflag;
     private static String [] array1;
@@ -52,12 +52,20 @@ public class Main4Activity extends AppCompatActivity implements SensorEventListe
     private SensorManager sensorManager;
     private Sensor accelerometerSensor;
 
+//    @Override
+//    protected void onNewIntent(Intent intent) {
+//        super.onNewIntent(intent);
+//        mTimeLeft = 30000;
+//        StartTimer();
+//        //p = 0;
+//        //c = 0;
+//    }
+
     @Override
-    protected void onNewIntent(Intent intent) {
-        super.onNewIntent(intent);
+    protected void onResume() {
+        super.onResume();
+        mTimeLeft = 30000;
         StartTimer();
-        //p = 0;
-        //c = 0;
     }
 
     @Override
@@ -110,6 +118,7 @@ public class Main4Activity extends AppCompatActivity implements SensorEventListe
                 intent.putExtra("gameflag", gameflag);
                 intent.putStringArrayListExtra("list", nameArray);
                 startActivity(intent);
+                finish();
             }
         });
 
@@ -138,6 +147,7 @@ public class Main4Activity extends AppCompatActivity implements SensorEventListe
                 intent.putExtra("gameflag", gameflag);
                 intent.putStringArrayListExtra("list", nameArray);
                 startActivity(intent);
+                finish();
             }
         }.start();
         mTimerRunning = true;

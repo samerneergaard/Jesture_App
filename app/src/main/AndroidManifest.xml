@@ -19,7 +19,7 @@
             android:name=".Main4Activity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="landscape"
-            android:launchMode="singleTop"/>
+            android:launchMode="singleTask"/>
         <activity
             android:name=".Main3Activity"
             android:configChanges="orientation|keyboardHidden"
