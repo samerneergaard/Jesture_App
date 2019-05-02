@@ -147,7 +147,7 @@ public class Main4Activity extends AppCompatActivity implements SensorEventListe
                 intent.putExtra("gameflag", gameflag);
                 intent.putStringArrayListExtra("list", nameArray);
                 startActivity(intent);
-                finish();
+                //finish();
             }
         }.start();
         mTimerRunning = true;
