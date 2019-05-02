@@ -27,7 +27,8 @@
         <activity
             android:name=".Main2Activity"
             android:configChanges="orientation|keyboardHidden"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"/>
         <activity
             android:name=".MainActivity"
             android:configChanges="orientation|keyboardHidden"

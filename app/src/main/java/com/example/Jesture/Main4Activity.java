@@ -62,8 +62,8 @@ public class Main4Activity extends AppCompatActivity implements SensorEventListe
 //    }
 
     @Override
-    protected void onResume() {
-        super.onResume();
+    protected void onRestart() {
+        super.onRestart();
         mTimeLeft = 30000;
         StartTimer();
     }
