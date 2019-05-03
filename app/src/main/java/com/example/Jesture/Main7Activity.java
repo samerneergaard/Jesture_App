@@ -26,8 +26,6 @@ public class Main7Activity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
         flag = "Again";
-
-
     }
 
     @Override

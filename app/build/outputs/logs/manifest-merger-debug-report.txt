@@ -78,7 +78,7 @@ ADDED from C:\Users\Samer\AndroidStudioProjects\IAN\app\src\main\AndroidManifest
 	android:name
 		ADDED from C:\Users\Samer\AndroidStudioProjects\IAN\app\src\main\AndroidManifest.xml:12:19-48
 activity#com.example.Jesture.Main6Activity
-ADDED from C:\Users\Samer\AndroidStudioProjects\IAN\app\src\main\AndroidManifest.xml:14:9-17:52
+ADDED from C:\Users\Samer\AndroidStudioProjects\IAN\app\src\main\AndroidManifest.xml:14:9-17:51
 	android:screenOrientation
 		ADDED from C:\Users\Samer\AndroidStudioProjects\IAN\app\src\main\AndroidManifest.xml:17:13-49
 	android:configChanges

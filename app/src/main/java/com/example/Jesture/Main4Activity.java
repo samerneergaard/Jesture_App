@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -146,6 +147,8 @@ public class Main4Activity extends AppCompatActivity implements SensorEventListe
                 intent.putExtra("pass", p);
                 intent.putExtra("gameflag", gameflag);
                 intent.putStringArrayListExtra("list", nameArray);
+                Log.d("c Value: ", Float.toString(c));
+                Log.d("p Value: ", Float.toString(p));
                 startActivity(intent);
                 //finish();
             }

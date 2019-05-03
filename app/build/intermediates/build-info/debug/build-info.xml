@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
-    abi="x86_64,x86"
+    abi="x86"
     api-level="28"
     build-mode="FULL"
     density="420dpi"
     format="10"
     plugin-version="3.4.0"
-    timestamp="1556673059640"
+    timestamp="1556814244877"
     token="4841848536447237788"
     verifier="FULL_BUILD_REQUESTED" >
 
@@ -18,165 +18,225 @@
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="623" />
+        duration="214" />
     <task
         name="verifier"
-        duration="230" />
+        duration="174" />
 
     <artifact
-        location="/Users/angelavellante1/Downloads/EC327/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
+        location="C:\Users\Samer\AndroidStudioProjects\IAN\app\build\intermediates\resources\instant-run\debug\resources-debug.apk"
         type="SPLIT" />
     <artifact
-        location="/Users/angelavellante1/Downloads/EC327/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
+        location="C:\Users\Samer\AndroidStudioProjects\IAN\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
         type="SPLIT" />
     <artifact
-        location="/Users/angelavellante1/Downloads/EC327/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
+        location="C:\Users\Samer\AndroidStudioProjects\IAN\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
         type="SPLIT" />
     <artifact
-        location="/Users/angelavellante1/Downloads/EC327/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
+        location="C:\Users\Samer\AndroidStudioProjects\IAN\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
         type="SPLIT" />
     <artifact
-        location="/Users/angelavellante1/Downloads/EC327/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
+        location="C:\Users\Samer\AndroidStudioProjects\IAN\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
         type="SPLIT" />
     <artifact
-        location="/Users/angelavellante1/Downloads/EC327/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
+        location="C:\Users\Samer\AndroidStudioProjects\IAN\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
         type="SPLIT" />
     <artifact
-        location="/Users/angelavellante1/Downloads/EC327/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
+        location="C:\Users\Samer\AndroidStudioProjects\IAN\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
         type="SPLIT" />
     <artifact
-        location="/Users/angelavellante1/Downloads/EC327/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
+        location="C:\Users\Samer\AndroidStudioProjects\IAN\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
         type="SPLIT" />
     <artifact
-        location="/Users/angelavellante1/Downloads/EC327/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
+        location="C:\Users\Samer\AndroidStudioProjects\IAN\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
         type="SPLIT" />
     <artifact
-        location="/Users/angelavellante1/Downloads/EC327/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
+        location="C:\Users\Samer\AndroidStudioProjects\IAN\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
         type="SPLIT" />
     <artifact
-        location="/Users/angelavellante1/Downloads/EC327/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
+        location="C:\Users\Samer\AndroidStudioProjects\IAN\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
         type="SPLIT" />
     <artifact
-        location="/Users/angelavellante1/Downloads/EC327/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
+        location="C:\Users\Samer\AndroidStudioProjects\IAN\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
         type="SPLIT" />
     <artifact
-        location="/Users/angelavellante1/Downloads/EC327/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
+        location="C:\Users\Samer\AndroidStudioProjects\IAN\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
         type="SPLIT_MAIN" />
     <artifact
-        location="/Users/angelavellante1/Downloads/EC327/C:\Users\DrewB\Desktop\EC327 Final Project\Jesture\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
+        location="C:\Users\angelavellante1\Downloads\EC327\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
         type="SPLIT" />
     <artifact
-        location="/Users/angelavellante1/Downloads/EC327/C:\Users\DrewB\Desktop\EC327 Final Project\Jesture\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
+        location="C:\Users\angelavellante1\Downloads\EC327\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
         type="SPLIT" />
     <artifact
-        location="/Users/angelavellante1/Downloads/EC327/C:\Users\DrewB\Desktop\EC327 Final Project\Jesture\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
+        location="C:\Users\angelavellante1\Downloads\EC327\C:\Users\DrewB\Desktop\EC327 Final Project\Jesture\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
         type="SPLIT" />
     <artifact
-        location="/Users/angelavellante1/Downloads/EC327/C:\Users\DrewB\Desktop\EC327 Final Project\Jesture\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
+        location="C:\Users\angelavellante1\Downloads\EC327\C:\Users\DrewB\Desktop\EC327 Final Project\Jesture\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
         type="SPLIT" />
     <artifact
-        location="/Users/angelavellante1/Downloads/EC327/C:\Users\DrewB\Desktop\EC327 Final Project\Jesture\app\build\intermediates\resources\instant-run\debug\resources-debug.apk"
+        location="C:\Users\angelavellante1\Downloads\EC327\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
         type="SPLIT" />
     <artifact
-        location="/Users/angelavellante1/Downloads/EC327/C:\Users\DrewB\Desktop\EC327 Final Project\Jesture\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
+        location="C:\Users\angelavellante1\Downloads\EC327\C:\Users\DrewB\Desktop\EC327 Final Project\Jesture\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
         type="SPLIT" />
     <artifact
-        location="/Users/angelavellante1/Downloads/EC327/C:\Users\DrewB\Desktop\EC327 Final Project\Jesture\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
+        location="C:\Users\angelavellante1\Downloads\EC327\C:\Users\DrewB\Desktop\EC327 Final Project\Jesture\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
         type="SPLIT" />
     <artifact
-        location="/Users/angelavellante1/Downloads/EC327/C:\Users\DrewB\Desktop\EC327 Final Project\Jesture\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
+        location="C:\Users\angelavellante1\Downloads\EC327\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
         type="SPLIT" />
     <artifact
-        location="/Users/angelavellante1/Downloads/EC327/C:\Users\DrewB\Desktop\EC327 Final Project\Jesture\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
+        location="C:\Users\angelavellante1\Downloads\EC327\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
         type="SPLIT" />
     <artifact
-        location="/Users/angelavellante1/Downloads/EC327/C:\Users\DrewB\Desktop\EC327 Final Project\Jesture\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
+        location="C:\Users\angelavellante1\Downloads\EC327\C:\Users\DrewB\Desktop\EC327 Final Project\Jesture\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
         type="SPLIT" />
     <artifact
-        location="/Users/angelavellante1/Downloads/EC327/C:\Users\DrewB\Desktop\EC327 Final Project\Jesture\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
+        location="C:\Users\angelavellante1\Downloads\EC327\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
         type="SPLIT" />
     <artifact
-        location="/Users/angelavellante1/Downloads/EC327/C:\Users\DrewB\Desktop\EC327 Final Project\Jesture\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
+        location="C:\Users\angelavellante1\Downloads\EC327\C:\Users\DrewB\Desktop\EC327 Final Project\Jesture\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\angelavellante1\Downloads\EC327\C:\Users\DrewB\Desktop\EC327 Final Project\Jesture\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\angelavellante1\Downloads\EC327\C:\Users\DrewB\Desktop\EC327 Final Project\Jesture\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\angelavellante1\Downloads\EC327\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\angelavellante1\Downloads\EC327\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\angelavellante1\Downloads\EC327\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\angelavellante1\Downloads\EC327\C:\Users\DrewB\Desktop\EC327 Final Project\Jesture\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\angelavellante1\Downloads\EC327\C:\Users\DrewB\Desktop\EC327 Final Project\Jesture\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\angelavellante1\Downloads\EC327\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\angelavellante1\Downloads\EC327\C:\Users\DrewB\Desktop\EC327 Final Project\Jesture\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\angelavellante1\Downloads\EC327\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
         type="SPLIT" />
 
     <build
         build-mode="FULL"
-        timestamp="1556673059640"
+        timestamp="1556814244877"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="/Users/angelavellante1/Downloads/EC327/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
+            location="C:\Users\Samer\AndroidStudioProjects\IAN\app\build\intermediates\resources\instant-run\debug\resources-debug.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/angelavellante1/Downloads/EC327/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
+            location="C:\Users\Samer\AndroidStudioProjects\IAN\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/angelavellante1/Downloads/EC327/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
+            location="C:\Users\Samer\AndroidStudioProjects\IAN\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/angelavellante1/Downloads/EC327/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
+            location="C:\Users\Samer\AndroidStudioProjects\IAN\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/angelavellante1/Downloads/EC327/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
+            location="C:\Users\Samer\AndroidStudioProjects\IAN\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/angelavellante1/Downloads/EC327/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
+            location="C:\Users\Samer\AndroidStudioProjects\IAN\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/angelavellante1/Downloads/EC327/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
+            location="C:\Users\Samer\AndroidStudioProjects\IAN\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/angelavellante1/Downloads/EC327/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
+            location="C:\Users\Samer\AndroidStudioProjects\IAN\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/angelavellante1/Downloads/EC327/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
+            location="C:\Users\Samer\AndroidStudioProjects\IAN\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/angelavellante1/Downloads/EC327/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
+            location="C:\Users\Samer\AndroidStudioProjects\IAN\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/angelavellante1/Downloads/EC327/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
+            location="C:\Users\Samer\AndroidStudioProjects\IAN\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/angelavellante1/Downloads/EC327/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
+            location="C:\Users\Samer\AndroidStudioProjects\IAN\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/angelavellante1/Downloads/EC327/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
+            location="C:\Users\Samer\AndroidStudioProjects\IAN\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
             type="SPLIT_MAIN" />
         <artifact
-            location="/Users/angelavellante1/Downloads/EC327/C:\Users\DrewB\Desktop\EC327 Final Project\Jesture\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
+            location="C:\Users\angelavellante1\Downloads\EC327\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/angelavellante1/Downloads/EC327/C:\Users\DrewB\Desktop\EC327 Final Project\Jesture\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
+            location="C:\Users\angelavellante1\Downloads\EC327\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/angelavellante1/Downloads/EC327/C:\Users\DrewB\Desktop\EC327 Final Project\Jesture\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
+            location="C:\Users\angelavellante1\Downloads\EC327\C:\Users\DrewB\Desktop\EC327 Final Project\Jesture\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/angelavellante1/Downloads/EC327/C:\Users\DrewB\Desktop\EC327 Final Project\Jesture\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
+            location="C:\Users\angelavellante1\Downloads\EC327\C:\Users\DrewB\Desktop\EC327 Final Project\Jesture\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/angelavellante1/Downloads/EC327/C:\Users\DrewB\Desktop\EC327 Final Project\Jesture\app\build\intermediates\resources\instant-run\debug\resources-debug.apk"
+            location="C:\Users\angelavellante1\Downloads\EC327\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/angelavellante1/Downloads/EC327/C:\Users\DrewB\Desktop\EC327 Final Project\Jesture\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
+            location="C:\Users\angelavellante1\Downloads\EC327\C:\Users\DrewB\Desktop\EC327 Final Project\Jesture\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/angelavellante1/Downloads/EC327/C:\Users\DrewB\Desktop\EC327 Final Project\Jesture\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
+            location="C:\Users\angelavellante1\Downloads\EC327\C:\Users\DrewB\Desktop\EC327 Final Project\Jesture\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/angelavellante1/Downloads/EC327/C:\Users\DrewB\Desktop\EC327 Final Project\Jesture\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
+            location="C:\Users\angelavellante1\Downloads\EC327\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/angelavellante1/Downloads/EC327/C:\Users\DrewB\Desktop\EC327 Final Project\Jesture\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
+            location="C:\Users\angelavellante1\Downloads\EC327\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/angelavellante1/Downloads/EC327/C:\Users\DrewB\Desktop\EC327 Final Project\Jesture\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
+            location="C:\Users\angelavellante1\Downloads\EC327\C:\Users\DrewB\Desktop\EC327 Final Project\Jesture\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/angelavellante1/Downloads/EC327/C:\Users\DrewB\Desktop\EC327 Final Project\Jesture\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
+            location="C:\Users\angelavellante1\Downloads\EC327\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/angelavellante1/Downloads/EC327/C:\Users\DrewB\Desktop\EC327 Final Project\Jesture\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
+            location="C:\Users\angelavellante1\Downloads\EC327\C:\Users\DrewB\Desktop\EC327 Final Project\Jesture\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\angelavellante1\Downloads\EC327\C:\Users\DrewB\Desktop\EC327 Final Project\Jesture\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\angelavellante1\Downloads\EC327\C:\Users\DrewB\Desktop\EC327 Final Project\Jesture\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\angelavellante1\Downloads\EC327\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\angelavellante1\Downloads\EC327\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\angelavellante1\Downloads\EC327\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\angelavellante1\Downloads\EC327\C:\Users\DrewB\Desktop\EC327 Final Project\Jesture\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\angelavellante1\Downloads\EC327\C:\Users\DrewB\Desktop\EC327 Final Project\Jesture\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\angelavellante1\Downloads\EC327\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\angelavellante1\Downloads\EC327\C:\Users\DrewB\Desktop\EC327 Final Project\Jesture\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\angelavellante1\Downloads\EC327\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
             type="SPLIT" />
     </build>
 
